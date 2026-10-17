@@ -1,0 +1,29 @@
+{
+  "_note": "复制成 atlas.json 再改。所有相对路径都以本文件所在目录为基准。",
+  "base": ".",
+  "epw": "weather/site.epw",
+  "mesh": "data/building_mesh.json",
+  "out": "图集",
+
+  "_orientation": "三选一：brg_y（推荐）/ brg_x / true_north_in_model；模型 +X 就是正东、+Y 就是正北时写 world_axes:true",
+  "orientation": { "brg_x": 90.0 },
+
+  "_site": "模型 XY 的场地范围（米）。cell = 高度场栅格，step = 场地日照网格步长",
+  "site": { "xmin": 0.0, "ymin": 0.0, "xmax": 180.0, "ymax": 180.0, "cell": 1.0, "step": 2.0 },
+
+  "_sunup_zmin": "太阳方向向量 Z 分量阈值；0.04 ≈ 高度角 2.29°。改它等于改「可照时数」分母",
+  "sunup_zmin": 0.04,
+  "dpi": 200,
+
+  "_viewpoints": "观测点 [x, y, z]，用于太阳轨迹遮挡轮廓；缺省取场地中心",
+  "viewpoints": { "sunpath": [90.0, 90.0, 1.5] },
+
+  "_labels": "所有出现在图上的项目名／署名都从这里取，留空则该行不画",
+  "labels": {
+    "title": "气候分析图集",
+    "site_name": "",
+    "site_address": "",
+    "footer_right": "",
+    "design_notes": []
+  }
+}
