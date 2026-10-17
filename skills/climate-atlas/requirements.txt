@@ -1,0 +1,9 @@
+# 必需：所有绘图与计算
+numpy>=1.24
+matplotlib>=3.7
+
+# 仅 plot_99_index.py（拼图集总览）需要
+Pillow>=9.5
+
+# 仅 --engine ladybug 需要（与 Ladybug Tools 生态逐位对齐时用）
+# ladybug-core>=0.43

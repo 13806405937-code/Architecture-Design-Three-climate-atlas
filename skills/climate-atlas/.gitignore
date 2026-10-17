@@ -1,0 +1,24 @@
+# 运行产物
+图集/
+data/*.json
+!data/.gitkeep
+*.png
+*.pdf
+
+# 本地配置（含真实路径，不入库）
+atlas.json
+weather/*.epw
+weather/*.ddy
+weather/*.stat
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# 系统
+.DS_Store
+Thumbs.db
+~$*
